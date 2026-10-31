@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="bar">
+      <a class="brand" href="#top">&lt;<i>dev</i> /&gt;</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">Full stack developer</p>
+          <h1>Ahmed Muhammad</h1>
+          <p class="lead">MongoDB, Express, React and Node.js, from the component on the page to the API that feeds it.
+            Move your cursor over the left or right half of the photo to see both sides of my work.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View projects</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="portrait">
+          <div class="stage" id="stage">
+            <div class="scanline" id="scanline"></div>
+            <img class="layer base" src="images/original.jpg"
+              alt="Portrait of the developer in front of a MERN stack whiteboard">
+            <img class="layer" id="frontendImg" src="images/frontend.jpg"
+              alt="Frontend skills: React, UI/UX, components">
+            <img class="layer" id="backendImg" src="images/backend.jpg" alt="Backend skills: API, database, server">
+            <div class="zone zone-left" data-target="frontendImg"></div>
+            <div class="zone zone-right" data-target="backendImg"></div>
+          </div>
+          <div class="legend" aria-hidden="true">
+            <span id="lgFront">Frontend</span>
+            <span id="lgBack">Backend</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="about">
+        <div class="about">
+          <h2>One developer, the whole stack.</h2>
+          <div>
+            <p>I work across the full MERN stack: designing interfaces in React, shaping REST APIs in Express and
+              Node.js, and modelling data in MongoDB.</p>
+            <p>I like projects where the interface and the server are designed together, so the data on screen is the
+              data the API was built to return.</p>
+            <p>Replace this paragraph with your own story: where you studied, what you have shipped, and what you want
+              to build next.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <p class="section-lead">Split the same way as the photo: what people see, and what runs behind it.</p>
+        <div class="skills">
+          <div class="skill-col">
+            <h3>Frontend</h3>
+            <ul>
+              <li>React <small>components, hooks</small></li>
+              <li>JavaScript <small>ES6+</small></li>
+              <li>HTML5 &amp; CSS3 <small>responsive layouts</small></li>
+              <li>UI/UX <small>interface design</small></li>
+            </ul>
+          </div>
+          <div class="skill-col">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js <small>server runtime</small></li>
+              <li>Express <small>routing, middleware</small></li>
+              <li>MongoDB <small>schemas, queries</small></li>
+              <li>REST API <small>GET /api/v1</small></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p class="section-lead">Three sample entries to show the layout. Swap in your own titles, descriptions and
+          links.</p>
+        <div class="projects">
+          <article class="project">
+            <span class="tag">Sample project</span>
+            <h3>Task Board</h3>
+            <p>Drag-and-drop kanban with user accounts, shared boards and live status changes.</p>
+            <div class="stack"><span>React</span><span>Express</span><span>MongoDB</span></div>
+          </article>
+          <article class="project">
+            <span class="tag">Sample project</span>
+            <h3>Shop API</h3>
+            <p>Product catalogue, cart and order endpoints with JWT authentication and pagination.</p>
+            <div class="stack"><span>Node.js</span><span>JWT</span><span>MongoDB</span></div>
+          </article>
+          <article class="project">
+            <span class="tag">Sample project</span>
+            <h3>Chat Rooms</h3>
+            <p>Real-time rooms with message history stored per channel and typing indicators.</p>
+            <div class="stack"><span>React</span><span>Socket.IO</span><span>Node.js</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="contact">
+          <div>
+            <h2>Let's build something.</h2>
+            <p class="section-lead" style="margin-bottom:0">Open to junior and mid-level full-stack roles, freelance
+              work and collaborations.</p>
+          </div>
+          <dl class="contact-list">
+            <div>
+              <dt>Email</dt>
+              <dd>
+                <!-- <a href="mailto:ahanmedmohammed@gmail.com?subject=Contact%20from%20Portfolio" class="link" id="mail">
+                  ahanmedmohammed@gmail.com</a> -->
+                <a class="copy" href="mailto:ahanmedmohammed@gmail.com?subject=Contact%20from%20Portfolio"
+                  id="copyMail">Send</a>
+              </dd>
+
+
+            </div>
+            <div>
+              <dt>GitHub</dt>
+              <a href="https://github.com/AhmedXFront" target="_blank">
+                GitHub</a>
+            </div>
+            <div>
+              <dt>LinkedIn</dt>
+              <a href="https://www.linkedin.com/in/ahmedmohammed-web-development/?isSelfProfile=true" target="_blank">
+                Ahmed Mohammed
+              </a>
+            </div>
+          </dl>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2026 Ahmed Mohammed</span>
+      <span>Built with <span>❤️</span> by Ahmed Mohammed</span>
+    </footer>
+  </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
